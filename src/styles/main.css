@@ -27,6 +27,15 @@
         color:white;
         width: 150px;
     }
+    .reserve-btn{
+        background-color: #F4CE14;
+        width: 200px;
+        height: 47px;
+        border-radius: 16px;
+        font-family:'Karla-Bold';
+        font-size:18px;
+        margin: auto;
+    }
 }
 .section-container{
    width:80%;
