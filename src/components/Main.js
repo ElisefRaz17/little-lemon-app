@@ -37,6 +37,7 @@ function Main() {
                 marginLeft: 'auto'
               }}
               alt="hero"
+              className="hero-image"
             />
             {/* </div> */}
           </div>
