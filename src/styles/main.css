@@ -7,6 +7,8 @@
     background-color: #495E57;
     margin: auto;
     height:347px;
+    display: flex;
+    flex-direction: column;
 
 .hero-details{
     text-align: left;
@@ -43,7 +45,7 @@
    margin-left: auto;
    display: block;
    text-align: center;
-   padding-top: 50px;
+   padding-top: 210px;
 }
 .online-menu-btn{
     font-family: 'Karla-Bold';
