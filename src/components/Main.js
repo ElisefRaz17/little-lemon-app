@@ -13,7 +13,9 @@ function Main() {
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
+            <div>
             <button className="reserve-btn">Reserve a Table</button>
+            </div>
           </div>
         </div>
       </div>
