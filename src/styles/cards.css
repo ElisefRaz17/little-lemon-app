@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.section-title{
+    font-family: 'MarkaziText-Medium';
+    font-size:64px;
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    /* align-content: flex-start; */
+    /* flex-wrap: wrap; */
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    /* padding-right: 430px; */
+}
+/* @media (max-width: 767px) { */
+.card-container{
+    /* display:grid;
+    grid-template-rows: 1;
+    grid-template-columns: 264.67px 264.67px 264.67px;
+    height: 253.74px;
+    justify-content: center;
+    gap: 50px;
+    grid-auto-flow: row; appear Horizontally on mobile phones */
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:25px;
+    margin-top: 50px;
+   
+}
+/* } */
+.card{
+    width: 264.67px;
+    background-color:  #edefee;
+    /* flex-direction: column; */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+
+    .card-title{
+        font-family: 'MarkaziText-Medium';
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    .card-price{
+       color: #EE9972;
+       text-align: end;
+       position: relative;
+       bottom:25px;
+       padding-right:20px;
+       font-family: 'Karla-Bold';
+       font-size: 16px;
+    }
+
+    .card-details{
+        flex-direction: column;
+        height: 50px;
+        padding-left: 20px;
+    }
+
+    .card-description{
+        padding-top: 0;
+        font-family:'Karla-Regular';
+        font-size:16px;
+        /* height: 60px; */
+        /* padding-bottom: 20px; */
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card-image{
+        width:264px;
+        height:185px;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+    }
+}
+

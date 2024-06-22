@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.hero{
+    background-color: #495E57;
+    margin: auto;
+    height:347px;
+    div{
+        padding-right: 100px;
+    }
+div > p{
+        font-size: 64px;
+        color:#F4CE14;
+        font-family:'MarkaziText-Medium';
+        width:50%;
+        display: block;
+        padding-top: 50px;
+        text-align: left;
+        margin: auto;
+    }
+}
+.section-container{
+   width:80%;
+   margin-right: auto;
+   margin-left: auto;
+   display: block;
+   text-align: center;
+}
+.online-menu-btn{
+    font-family: 'Karla-Bold';
+    font-size: 18px;
+    background-color: #F4CE14;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    border-radius: 16px;
+}

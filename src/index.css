@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@font-face{
+  font-family:'MarkaziText-Regular';
+  src:local('MarkaziText-Regular'),url('/public/fonts/MarkaziText-Regular.ttf') format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face{
+  font-family:'MarkaziText-Bold';
+  src:local('MarkaziText-Bold'), url('/public/fonts/MarkaziText-Bold.ttf') format('truetype')
 }
+
+@font-face{
+  font-family:'MarkaziText-SemiBold';
+  src:local('MarkaziText-SemiBold'), url('/public/fonts/MarkaziText-SemiBold.ttf') format('truetype')
+}
+
+@font-face{
+  font-family:'MarkaziText-Medium';
+  src:local('MarkaziText-Medium'), url('/public/fonts/MarkaziText-Medium.ttf') format('truetype')
+}
+
+@font-face{
+  font-family:'Karla-Bold';
+  src:local('Karla-Bold'), url('/public/fonts/Karla-Bold.ttf') format('truetype')
+}
+
+@font-face{
+  font-family:'Karla-Regular';
+  src:local('Karla-Regular'), url('/public/fonts/Karla-Regular.ttf') format('truetype')
+}
+
+body {
+  margin: 0;
+  font-family: "MarkaziText-Regular";
+}
+
+/* code {
+  font-family: "Markazi Text", regular;
+} */

@@ -1,9 +1,8 @@
-import './App.css';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Main from './components/Main';
 import Footer from './components/Footer';
-import logo from './assets/Logo.svg';
+import logo from './assets/Logo.png';
 
 function App() {
   return (
