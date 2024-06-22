@@ -7,10 +7,11 @@
     background-color: #495E57;
     margin: auto;
     height:347px;
-    div{
-        padding-right: 100px;
-    }
-div > p{
+
+.hero-details{
+    text-align: left;
+}
+.hero-title{
         font-size: 64px;
         color:#F4CE14;
         font-family:'MarkaziText-Medium';
@@ -19,6 +20,12 @@ div > p{
         padding-top: 50px;
         text-align: left;
         margin: auto;
+    }
+    .hero-description{
+        font-weight: 'Karla-Bold';
+        font-size: 16px;
+        color:white;
+        width: 150px;
     }
 }
 .section-container{
