@@ -7,7 +7,7 @@ body{
     font-family: 'Karla-Bold';
 }
 .container {
-    /* max-width: 750px; */
+    max-width: 840px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -23,7 +23,7 @@ body{
   }
   
   .logo {
-    padding-left: 65px;
+    padding-right: 50px;
   }
   
   .menu-icon {
@@ -31,12 +31,14 @@ body{
   }
   
   .nav-elements {
+    display:block;
   }
   
   .nav-elements ul {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+    width: max-content;
   }
   
   .nav-elements ul li:not(:last-child) {
