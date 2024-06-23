@@ -10,6 +10,7 @@ function Main() {
         <div className="hero-details">
           <div className="hero-title">
             Little Lemon
+            <div style={{font:'Karla-Bold', color:'white', fontSize:'40px'}}>Chicago</div>
             <p className="hero-description">
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
@@ -24,12 +25,7 @@ function Main() {
               style={{
                 borderRadius: "16px",
                 width: "375px",
-                height: "387px",
-                // justifyContent: "flex-end",
-                // display: "flex",
-                // position:'relative',
-                // marginTop:'-200px',
-                // marginLeft: 'auto'
+                height: "387px"
               }}
               alt="hero"
               className="hero-image"
@@ -39,9 +35,10 @@ function Main() {
       </div>
       <div className="section-container">
         <span className="section-title">This weeks specials!</span>
-        <div>
+        <button className="online-menu-btn">Online Menu</button>
+        {/* <div>
           <button className="online-menu-btn">Online Menu</button>
-        </div>
+        </div> */}
       </div>
       <Card />
     </main>
