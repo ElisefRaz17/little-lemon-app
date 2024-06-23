@@ -14,21 +14,17 @@
     display: flex;
     justify-content: space-around;
 }
-.hero-title{
-        font-size: 64px;
-        color:#F4CE14;
-        font-family:'MarkaziText-Medium';
-        display: block;
-        padding-top: 50px;
-        padding-left: 100px;
-        margin-left: auto;
-        margin-right: auto;
+.hero-text{
+    padding-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
     }
     .hero-description{
-        font-weight: 'Karla-Bold';
+        font-family: 'Karla-Bold';
         font-size: 16px;
         color:white;
-        width: 150px;
+        width: 224px;
+        height:79px;
     }
     .reserve-btn{
         background-color: #F4CE14;
@@ -47,6 +43,9 @@
    display: block;
    text-align: center;
    padding-top: 130px;
+}
+.testimonial-container{
+   padding-top: 50px;
 }
 .online-menu-btn{
     font-family: 'Karla-Bold';
