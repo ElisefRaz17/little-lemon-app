@@ -17,13 +17,6 @@ function Main() {
             <div>
               <button className="reserve-btn">Reserve a Table</button>
             </div>
-            {/* <div
-              style={{
-                width: "100%",
-                justifyContent: "flex-end",
-                display: "flex",
-              }}
-            > */}
             <img
               src={headerPhoto}
               style={{
@@ -39,14 +32,8 @@ function Main() {
               alt="hero"
               className="hero-image"
             />
-            {/* </div> */}
           </div>
-          {/* <div style={{float:'right', width:'49%'}}>
-            <img src={headerPhoto} style={{borderRadius:'16px', width:'375px', height:'387px'}}/>
-
-          </div> */}
         </div>
-        {/* <img src={headerPhoto} style={{borderRadius:'16px', width:'375px', height:'387px', float:'right', position:'relative', bottom:'230px', right:'400px'}}/> */}
       </div>
       <div className="section-container">
         <span className="section-title">This weeks specials!</span>

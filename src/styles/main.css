@@ -56,11 +56,12 @@
     text-align: center;
     border-radius: 16px;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 700px) {
     .hero-image{
-        width:60% !important;
-        height:2% !important;
-        left:150px !important;
+        width: 60% !important;
+        height: 100% !important;
+        left: 90px !important;
+        top: 50px;
     }
     .hero{
         width:fit-content;
