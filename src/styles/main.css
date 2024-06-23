@@ -11,17 +11,18 @@
     flex-direction: column;
 
 .hero-details{
-    text-align: left;
+    display: flex;
+    justify-content: space-around;
 }
 .hero-title{
         font-size: 64px;
         color:#F4CE14;
         font-family:'MarkaziText-Medium';
-        width:50%;
         display: block;
         padding-top: 50px;
-        text-align: left;
-        margin: auto;
+        padding-left: 100px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .hero-description{
         font-weight: 'Karla-Bold';
@@ -45,7 +46,7 @@
    margin-left: auto;
    display: block;
    text-align: center;
-   padding-top: 210px;
+   padding-top: 130px;
 }
 .online-menu-btn{
     font-family: 'Karla-Bold';
@@ -57,13 +58,17 @@
     border-radius: 16px;
 }
 @media screen and (max-width: 700px) {
+    div{
+        display: block;
     .hero-image{
-        width: 60% !important;
-        height: 100% !important;
-        left: 90px !important;
-        top: 50px;
+        position: relative;
     }
+}
+
     .hero{
         width:fit-content;
+    }
+    .hero-details{
+        width: max-content;
     }
 }

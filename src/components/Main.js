@@ -6,7 +6,7 @@ import styles from "../styles/main.css";
 function Main() {
   return (
     <main>
-      <div className="hero">
+      <div className="hero wrapper">
         <div className="hero-details">
           <div className="hero-title">
             Little Lemon
@@ -17,22 +17,24 @@ function Main() {
             <div>
               <button className="reserve-btn">Reserve a Table</button>
             </div>
+          </div>
+          <div style={{margin: "50px 40px 0 0", marginRight:'auto'}}>
             <img
               src={headerPhoto}
               style={{
                 borderRadius: "16px",
                 width: "375px",
                 height: "387px",
-                justifyContent: "flex-end",
-                display: "flex",
-                position:'relative',
-                marginTop:'-200px',
-                marginLeft: 'auto'
+                // justifyContent: "flex-end",
+                // display: "flex",
+                // position:'relative',
+                // marginTop:'-200px',
+                // marginLeft: 'auto'
               }}
               alt="hero"
               className="hero-image"
             />
-          </div>
+            </div>
         </div>
       </div>
       <div className="section-container">

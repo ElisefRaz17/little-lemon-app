@@ -11,9 +11,10 @@
     /* justify-content: space-around; */
     /* align-content: flex-start; */
     /* flex-wrap: wrap; */
-    width: 50%;
+    width: 65%;
     margin: auto;
     text-align: left;
+    padding-left: 70px;
     /* padding-right: 430px; */
 }
 /* @media (max-width: 767px) { */
@@ -28,8 +29,11 @@
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap:25px;
+    gap:60px;
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 70px;
    
 }
 /* } */
