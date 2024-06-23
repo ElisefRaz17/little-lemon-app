@@ -18,7 +18,7 @@ function Main() {
               <button className="reserve-btn">Reserve a Table</button>
             </div>
           </div>
-          <div style={{margin: "50px 40px 0 0", marginRight:'auto'}}>
+          <div style={{ margin: "50px 40px 0 0", marginRight: "auto" }}>
             <img
               src={headerPhoto}
               style={{
@@ -34,12 +34,14 @@ function Main() {
               alt="hero"
               className="hero-image"
             />
-            </div>
+          </div>
         </div>
       </div>
       <div className="section-container">
         <span className="section-title">This weeks specials!</span>
-        <button className="online-menu-btn">Online Menu</button>
+        <div>
+          <button className="online-menu-btn">Online Menu</button>
+        </div>
       </div>
       <Card />
     </main>

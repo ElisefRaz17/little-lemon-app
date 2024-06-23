@@ -84,3 +84,8 @@
     }
 }
 
+@media (max-width: 768px) {
+    .card-container{
+        padding-left: 100px;
+    }
+}

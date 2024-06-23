@@ -14,7 +14,6 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    width:700px;
   }
   
   .navbar {
@@ -73,6 +72,18 @@ body{
     .nav-elements ul li:not(:last-child) {
       margin-right: 30px;
     }
+    .container{
+        /* max-width: 750px; */
+        width:700px;
+    }
+    .section-container{
+        width:700px !important;
+    }
+    div{
+    .online-menu-btn{
+
+    }
+}
   }
   
   @media (max-width: 600px) {
@@ -84,7 +95,7 @@ body{
     .nav-elements {
       position: absolute;
       /* right: 0; */
-      right: -50px;
+      right: -150px;
       top: 60px;
       background-color: white;
       width: 0px;
