@@ -5,46 +5,46 @@ import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../assets/Hamburger.svg";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
 
-function Nav() {
-  const [showNavbar, setShowNavbar] = useState(false);
+const Nav = () => {
+  return(
+    <nav>
+      <a href='/'>
+        <Logo />
+      </a>
 
-  const handleShowNavbar = () => {
-    setShowNavbar(!showNavbar);
-  };
-  return (
-    <nav className="navbar">
-      <div className="container">
-        <div className="logo">
-          <Logo />
-        </div>
-        <div className="menu-icon" onClick={handleShowNavbar}>
-          <Hamburger />
-        </div>
-        <div className={`nav-elements ${showNavbar && "active"}`}>
-          <ul className="menu">
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">Menu</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">Reservations</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">Order Online</NavLink>
-            </li>
-            <li>
-              <NavLink to="/">Login</NavLink>
-            </li>
-          </ul>
-        </div>
+      {/** mobile navbar */}
+      <div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
+      {/* nav items*/}
+      <ul>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/">About</a>
+        </li>
+        <li>
+          <a href="/">Services</a>
+        </li>
+        <li>
+          <a href="/">Menu</a>
+        </li>
+        <li>
+          <a href="/">Reservations</a>
+        </li>
+        <li>
+          <a href="/">Order Online</a>
+        </li>
+        <li>
+          <a href="/">Login</a>
+        </li>
+      </ul>
+      
     </nav>
-  );
+  )
 }
 
 export default Nav;
