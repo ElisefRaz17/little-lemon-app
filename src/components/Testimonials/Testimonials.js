@@ -28,6 +28,7 @@ function Testimonials() {
           fontSize: "36px",
           textAlign: "center",
           paddingTop: "130px",
+          paddingLeft:'50px'
         }}
       >
         Testimonials

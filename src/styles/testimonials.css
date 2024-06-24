@@ -24,6 +24,7 @@ box-sizing: border-box;
     flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
+    padding-left: 70px;
 }
 .reviewer-image{
     width: 47px;
