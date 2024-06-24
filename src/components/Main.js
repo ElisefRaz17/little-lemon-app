@@ -3,11 +3,12 @@ import Card from "./Cards/Cards";
 import headerPhoto from "../assets/restauranfood.jpg";
 import styles from "../styles/main.css";
 import Testimonials from "./Testimonials/Testimonials";
+import About from "./About";
 
 function Main() {
   return (
     <main>
-      <div className="hero wrapper">
+      <div className="hero">
         <div className="hero-details">
           <div className="hero-text">
             <div
@@ -51,14 +52,11 @@ function Main() {
       <div className="section-container">
         <span className="section-title">This weeks specials!</span>
         <button className="online-menu-btn">Online Menu</button>
-        {/* <div>
-          <button className="online-menu-btn">Online Menu</button>
-        </div> */}
       </div>
       <Card />
-      {/* <div className='testimonial-container'> */}
-       <Testimonials/>
-    {/* </div> */}
+      <Testimonials/>
+      <About/>
+
     </main>
   );
 }

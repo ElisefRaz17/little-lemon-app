@@ -1,0 +1,84 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    
+}
+
+.about-container{
+    background-color: white;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.about-details{
+    display: flex;
+    justify-content: space-around;
+}
+.about-text{
+    margin-left: auto;
+    padding-right: 100px;
+ 
+}
+.about-description{
+        font-family: 'Karla-Bold';
+        font-size: 16px;
+        color:black;
+        width: 224px;
+        height:79px;
+}
+.title{
+    font-size: 64px;
+    color: black;
+    font-family: "MarkaziText-Medium";
+    padding-top: 50px;
+    height: 115px;
+}
+
+.subtitle{
+    font-family: "MarkaziText-Regular";
+    color: "white";
+    font-size: 40px;
+}
+.picture-container{
+   height: 500px;
+   justify-content: left;
+   display: inline-flex;
+   margin-right: auto;
+}
+.about-pic{
+    width: 271.88px;
+    height: 336px;
+}
+#restaurant-pic{
+    position: relative;
+    left: 80px;
+    top: 123px;
+    z-index: 1;
+}
+#people-pic{
+    position: relative;
+    left: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    .about-details{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+    }
+    .about-container{
+        width: 700px;
+    }
+    .picture-container{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: row;
+        align-items: self-start;
+        padding-left: 50px;
+        padding-top: 20px;
+
+    }
+}
