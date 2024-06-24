@@ -1,14 +1,20 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BookingForm = (props) => {
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [email, setEmail] = useState("");
+  const [tel, setTel] = useState("");
   const [date, setDate] = useState("");
   const [times, setTimes] = useState("");
   const [guests, setGuest] = useState("");
   const [occasion, setOccasion] = useState("");
+  const [comments, setComments] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.SubmitForm(e);
+    props.submitForm(e);
   };
   const handleChange = (e) => {
     setDate(e);
@@ -31,16 +37,11 @@ const BookingForm = (props) => {
             </div>
             <div>
               <label htmlFor="book-time">Choose Time:</label>
-              <select
-                id="book-time"
+              <input
+                type="time"
                 value={times}
-                onChange={(e) => setTimes(e.target.value)}
-              >
-                <option value="">Select a Time</option>
-                {props.availableTimes.availableTimes.map((availableTimes) => {
-                  return <option key={availableTimes}>{times}</option>;
-                })}
-              </select>
+                onChange={(e)=> {setTimes(e.currentTarget.value)}}
+              />
             </div>
             <div>
               <label htmlFor="book-guests">Number of Guests:</label>

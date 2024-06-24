@@ -100,7 +100,9 @@ body{
     margin-bottom: 30px;
     font-family: 'MarkaziText-Regular';
   }
-  
+  .confirmation-title{
+    text-align: center;
+  }
   button {
     background-color: #F4CE14;
     color: black;
@@ -126,9 +128,16 @@ body{
     border-radius: 20px;
   }
   
+  .confirm-check{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
-  form, .comfirm{
-    padding: 10px 13%;
+  form, .confirm{
+    padding: 10%;
   }
   
   .formField{
@@ -158,10 +167,15 @@ body{
   
   }
   
-  .comfirm span{
-    color: blue;
+  .confirm span{
+    color: #495e57;
   }
   
+  .confirm-back-btn{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
   
   /* menu items */
   
@@ -282,7 +296,7 @@ body{
       display: none;
     }
   
-    form, .comfirm{
+    form, .confirm{
       padding: 10px 8%;
     }
   

@@ -2,10 +2,11 @@ import React, { useReducer } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import Header from "./Header";
 import Booking from "./Booking/Booking";
+import ConfirmedBooking from "./Booking/ConfirmedBooking";
 const Main = () => {
   
   const seedRandom = function(seed){
-    var m = 2**35 - 31;
+    var m = 2*35 - 31;
     var a = 185852;
     var s = seed % m;
     return function(){
@@ -16,12 +17,14 @@ const Main = () => {
 
   const fetchAPI = function(date){
     let result = [];
-    let random = seedRandom(date.getDate());
+    let dt = new Date(date);
+    let seed = dt.getDate();
+    let random = seedRandom(seed);
     for (let i=17; i<=23; i++){
       if(random() < 0.5){
         result.push(i + ':00');
       }
-      if(random() > 0.5){
+      if(random() < 0.5){
         result.push(i + ':30');
       }
     }
@@ -50,6 +53,7 @@ const Main = () => {
       <Route path='/' element={<Header/>}/>
       <Route path='/booking' element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>
       <Route path='/' element={<Header/>}/>
+      <Route path="/confirmed" element={<ConfirmedBooking/>}/>
     </Routes>
   </main>
   );
