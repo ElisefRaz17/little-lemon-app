@@ -72,13 +72,27 @@
     .about-container{
         width: 700px;
     }
+    .about-pic{
+        width: 120px;
+        height: 120px;
+    }
     .picture-container{
-        justify-content: space-around;
-        display: flex;
-        flex-direction: row;
-        align-items: self-start;
-        padding-left: 50px;
-        padding-top: 20px;
+        height: 500px;
+        display: inline-flex;
+        position: absolute;
+        margin-right: auto;
+        margin-left: auto;
+        width: 700px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 200px;
 
+    }
+    #people-pic{
+        right: 50px;
+    }
+    #restaurant-pic{
+        position: relative;
+        right: 100px;
     }
 }
