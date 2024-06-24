@@ -5,7 +5,7 @@ import "../../styles/testimonials.css";
 function Testimonials() {
   const testimonials = reviews.map((review) => (
     <div key={review.id} className="review">
-      <p style={{marginTop:'20px'}}>Rating:{review.rating}</p>
+      <p style={{marginTop:'20px', paddingBottom:'10px'}}>Rating: {review.rating}</p>
       <div className="review-and-pic">
         <p style={{width:'130px', float:'right', textAlign:'left',paddingTop:'10px'}}>{review.name}</p>
         <div style={{width:'50px'}}>
