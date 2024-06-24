@@ -1,64 +1,58 @@
-import React from "react";
-import Card from "./Cards/Cards";
-import headerPhoto from "../assets/restauranfood.jpg";
-import styles from "../styles/main.css";
-import Testimonials from "./Testimonials/Testimonials";
-import About from "./About";
+import React, { useReducer } from "react";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Header from "./Header";
+import Booking from "./Booking/Booking";
+const Main = () => {
+  
+  const seedRandom = function(seed){
+    var m = 2**35 - 31;
+    var a = 185852;
+    var s = seed % m;
+    return function(){
+      return (s = s * a % m)/m;
+    }
+  }
 
-function Main() {
+
+  const fetchAPI = function(date){
+    let result = [];
+    let random = seedRandom(date.getDate());
+    for (let i=17; i<=23; i++){
+      if(random() < 0.5){
+        result.push(i + ':00');
+      }
+      if(random() > 0.5){
+        result.push(i + ':30');
+      }
+    }
+    return result;
+  }
+
+  const submitAPI =  function(formData){
+    return true;
+  }
+
+  const initialState = {availableTimes:fetchAPI(new Date())};
+  const [state, dispatch] = useReducer(updateTimes, initialState);
+
+  function updateTimes(state, date){
+    return {availableTimes:fetchAPI(new Date())}
+  }
+  const navigate = useNavigate();
+  function submitForm(formData){
+    if(submitAPI(formData)){
+      navigate("/confirmed");
+    }
+  }
   return (
-    <main>
-      <div className="hero">
-        <div className="hero-details">
-          <div className="hero-text">
-            <div
-              style={{
-                fontSize: "64px",
-                color: " #F4CE14",
-                fontFamily: "MarkaziText-Medium",
-                paddingTop: "50px",
-                height: "115px",
-              }}
-            >
-              Little Lemon
-            </div>
-            <div
-              style={{ fontFamily: "MarkaziText-Regular", color: "white", fontSize: "40px" }}
-            >
-              Chicago
-            </div>
-            <p className="hero-description">
-              We are a family owned Mediterranean restaurant, focused on
-              traditional recipes served with a modern twist.
-            </p>
-            <div style={{paddingTop:'20px'}}>
-              <button className="reserve-btn">Reserve a Table</button>
-            </div>
-          </div>
-          <div style={{ margin: "50px 40px 0 0", marginRight: "auto" }}>
-            <img
-              src={headerPhoto}
-              style={{
-                borderRadius: "16px",
-                width: "375px",
-                height: "387px",
-              }}
-              alt="hero"
-              className="hero-image"
-            />
-          </div>
-        </div>
-      </div>
-      <div className="section-container">
-        <span className="section-title">This weeks specials!</span>
-        <button className="online-menu-btn">Online Menu</button>
-      </div>
-      <Card />
-      <Testimonials/>
-      <About/>
-
-    </main>
+  <main>
+    <Routes>
+      <Route path='/' element={<Header/>}/>
+      <Route path='/booking' element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>
+      <Route path='/' element={<Header/>}/>
+    </Routes>
+  </main>
   );
-}
+};
 
 export default Main;

@@ -131,9 +131,7 @@
   
   /* Responsive adjustments */
   @media screen and (max-width: 768px) {
-    footer{
-        min-width: 768px;
-    }
+
     footer .top {
       flex-direction: column;
     }

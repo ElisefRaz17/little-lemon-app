@@ -1,7 +1,7 @@
-import greek_salad from '../../assets/greek salad.jpg';
-import bruchetta from '../../assets/bruchetta.png';
-import lemon_dessert from '../../assets/lemon dessert.jpg';
-const items = [
+import greek_salad from './assets/greek salad.jpg';
+import bruchetta from './assets/bruchetta.png';
+import lemon_dessert from './assets/lemon dessert.jpg';
+const recipes = [
     {
       id: 1,
       title: "Greek salad",
@@ -28,4 +28,4 @@ const items = [
     },
   ];
 
-  export default items;
+  export default recipes;

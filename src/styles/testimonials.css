@@ -40,13 +40,14 @@ box-sizing: border-box;
 
 @media screen and (max-width: 700px){
     .main-testimonial-container{
-        width: fit-content;
         height: auto;
+        h2{
+            padding-right: 50px;
+        }
     }
     .reviews{
         flex-direction: column;
-        width: 750px;
-        align-items: center;
+        padding-left: 0px;
         gap: 4px;
     }
 }

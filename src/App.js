@@ -3,11 +3,24 @@ import Nav from "./components/Nav";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import logo from "./assets/Logo.png";
-import './App.css';
-
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Menu from "./components/Menu";
+import Testimonials from './components/Testimonials/Testimonials';
+import About from "./components/About";
 function App() {
   return (
-    <Nav/>
+    <>
+      <BrowserRouter>
+        <Nav />
+        <Main />
+        <Menu />
+        <Testimonials/>
+        <About/>
+        <Footer/>
+      </BrowserRouter>
+    </>
+
     // <>
     //   <Header>
     //     <img src={logo} style={{ width: "194px", height: "52px" }} alt="logo" />

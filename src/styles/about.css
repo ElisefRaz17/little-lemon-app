@@ -64,28 +64,22 @@
 }
 
 @media screen and (max-width: 700px) {
-    .about-details{
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-    }
-    .about-container{
-        width: 700px;
-    }
     .about-pic{
         width: 120px;
         height: 120px;
+    }
+    .about-text{
+        margin-right: auto;
+        padding-right: 0px;
     }
     .picture-container{
         height: 500px;
         display: inline-flex;
         position: absolute;
-        margin-right: auto;
-        margin-left: auto;
-        width: 700px;
         justify-content: center;
         align-items: center;
-        padding-left: 200px;
+        padding-left: 100px;
+        padding-top: 50px;
 
     }
     #people-pic{

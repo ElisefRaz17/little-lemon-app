@@ -27,8 +27,9 @@ function Testimonials() {
           fontFamily: "MarkaziText-Medium",
           fontSize: "36px",
           textAlign: "center",
-          paddingTop: "130px",
-          paddingLeft:'50px'
+          paddingTop: "100px",
+          paddingLeft:'50px',
+          color:'black'
         }}
       >
         Testimonials

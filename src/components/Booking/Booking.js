@@ -1,10 +1,14 @@
 import "../../styles/booking.css";
- import React from 'react'
- 
- function Booking() {
-   return (
-     <div>Booking</div>
-   )
- }
- 
- export default Booking
+import React from "react";
+import BookingForm from "./BookingForm";
+
+const Booking = (props) => {
+  return (
+    <BookingForm
+      availableTimes={props.availableTimes}
+      dispatch={props.dispatch}
+      SubmitForm={props.SubmitForm}
+    />
+  );
+};
+export default Booking;
