@@ -10,26 +10,28 @@ function Footer() {
       <Logo/>
         <div className="pages">
           <ul>
-            <h3>Brand Name</h3>
+            <h3>Navigation</h3>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Catalog</a></li>
-            <li><a href="#">Search</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Login</a></li>
           </ul>
 
           <ul>
-            <h3>Careers</h3>
-            <li><a href="#">Apply Online</a></li>
-            <li><a href="#">Available Positions</a></li>
+            <h3>Contact</h3>
+            <li><a href="#">Address</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Email</a></li>
+
           </ul>
 
           <ul>
-            <h3>About Us</h3>
-            <li><a href="#">Meet Our Team</a></li>
-            <li><a href="#">Our Responsibilities</a></li>
-            <li><a href="#">Our Codes</a></li>
-            <li><a href="#">Our Values</a></li>
+            <h3>Social Media Links</h3>
+            <li><a href="#">Address</a></li>
+            <li><a href="#">Phone Number</a></li>
+            <li><a href="#">Email</a></li>
           </ul>
         </div>
         <div className="newsletter">
