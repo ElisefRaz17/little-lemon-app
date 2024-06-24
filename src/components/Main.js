@@ -56,9 +56,9 @@ function Main() {
         </div> */}
       </div>
       <Card />
-      <div className='testimonial-container'>
+      {/* <div className='testimonial-container'> */}
        <Testimonials/>
-    </div>
+    {/* </div> */}
     </main>
   );
 }

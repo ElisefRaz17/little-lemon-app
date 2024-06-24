@@ -4,6 +4,49 @@ padding: 0px;
 box-sizing: border-box;
 }
 
-.container{
-    
+
+
+.review{
+    background-color: white;
+    width: 200px;
+    height: 175px;
+    padding-left:20px;
 }
+.review-text{
+    font-family: 'Karla-Regular';
+    font-size: 14px;
+    padding-top: 10px;
+}
+.reviews{
+    display:flex;
+    gap:4px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.reviewer-image{
+    width: 47px;
+    height: 46px;
+}
+.main-testimonial-container{
+    background: #D9D9D9;
+    height: 590px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 700px){
+    .main-testimonial-container{
+        width: fit-content;
+        height: auto;
+    }
+    .reviews{
+        flex-direction: column;
+        width: 750px;
+        align-items: center;
+        gap: 4px;
+    }
+}
+

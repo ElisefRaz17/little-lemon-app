@@ -86,6 +86,9 @@
 
 @media (max-width: 768px) {
     .card-container{
-        padding-left: 100px;
+        justify-content: center;
+        display: flex;
+        width: 650px;
+        padding-left: 70px;
     }
 }
