@@ -24,7 +24,54 @@ const BookingForm = (props) => {
     <header>
       <section>
         <form onSubmit={handleSubmit}>
-          <fieldset>
+          <fieldset className="fields">
+            <div>
+              <label htmlFor="book-fName">First Name</label>
+              <input
+                id="book-fName"
+                value={fName}
+                onChange={(e) => setFName(e.target.value)}
+                type="text"
+                required
+                minLength={2}
+                maxLength={50}
+              />
+            </div>
+            <div>
+              <label htmlFor="book-email">Email Address</label>
+              <input
+                id="book-email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                type="email"
+                required
+                minLength={4}
+                maxLength={200}
+              />
+            </div>
+            <div>
+              <label htmlFor="book-phone">Phone Number</label>
+              <input
+                id="book-phone"
+                value={tel}
+                onChange={(e) => setTel(e.target.value)}
+                type="tel"
+                placeholder="(xxx)-xxx-xxxx"
+                minLength={10}
+                maxLength={25}
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="book-lName">Last Name</label>
+              <input
+                id="book-lName"
+                value={lName}
+                onChange={(e) => setLName(e.target.value)}
+                type="text"
+                required
+              />
+            </div>
             <div>
               <label htmlFor="book-date">Choose Date</label>
               <input
@@ -40,7 +87,9 @@ const BookingForm = (props) => {
               <input
                 type="time"
                 value={times}
-                onChange={(e)=> {setTimes(e.currentTarget.value)}}
+                onChange={(e) => {
+                  setTimes(e.currentTarget.value);
+                }}
               />
             </div>
             <div>
@@ -65,6 +114,18 @@ const BookingForm = (props) => {
                 <option>Anniversary</option>
                 <option>Engagement</option>
               </select>
+            </div>
+            <div>
+                <label htmlFor="comments">Additional Comments</label>
+                <textarea
+                    id="comments"
+                    rows={8}
+                    cols={50}
+                    placeholder="Additional Comments"
+                    value={comments}
+                    onChange={(e)=>setComments(e.target.value)}
+                >
+                </textarea>
             </div>
             <div className="btnReceive">
               <input

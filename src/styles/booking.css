@@ -1,0 +1,14 @@
+.fields{
+    display: flex;
+    flex-flow: column;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+    width: 60%;
+    border-radius: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    filter: drop-shadow(2px 4px 6px grey);
+    background-color: white;
+    border:none;
+}
