@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "../styles/nav.css";
 import logo from "../assets/Logo.png";
-import { BrowserRouter, NavLink, Route, Switch } from "react-router-dom";
+import { BrowserRouter, NavLink, Route,Routes, Switch } from "react-router-dom";
 import { ReactComponent as Hamburger } from "../assets/Hamburger.svg";
 import { ReactComponent as Logo } from "../assets/Logo.svg";
+import Login from "./Login";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -43,8 +44,11 @@ const Nav = () => {
           <a href="/">Order Online</a>
         </li>
         <li>
-          <a href="/">Login</a>
+          <a href="/login">Login</a>
         </li>
+        {/* <Route path="/login" element={<Login />}/> */}
+          {/* <a href="/login">Login</a> */}
+     
       </ul>
       
     </nav>
