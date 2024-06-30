@@ -1,5 +1,5 @@
-.fields{
-    display: flex;
+.form-label{
+    /* display: flex;
     flex-flow: column;
     margin-right: auto;
     margin-left: auto;
@@ -9,6 +9,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
     filter: drop-shadow(2px 4px 6px grey);
-    background-color: white;
-    border:none;
+    background-color: white; */
+    color:white;
 }
